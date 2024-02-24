@@ -30,3 +30,6 @@ pip install pandas
 pip install numpy
 pip install spotipy
 ```
+
+### Project Execution Flow
+Extract Data API -> Lambda Trigger (every 1 hour) -> Run Extract Code -> Store Raw Data -> Trigger Transform Function -> Transform Data and Load it -> Query using Athena 
